@@ -29,7 +29,7 @@ collections_config:
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
         _inputs:
-          seo.title:
+          seo.page_description:
             type: text
             options:
               required: true
