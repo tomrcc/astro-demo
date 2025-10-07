@@ -24,6 +24,16 @@ collections_config:
         schema: default
         icon: pages
     schemas:
+      job:
+        name: This one won't work until a resave.
+        path: '.cloudcannon/schemas/page.md'
+        remove_extra_inputs: false
+        _inputs:
+          seo.page_description:
+            type: text
+            options:
+              required: true
+              required_message: This is a test of input validation in input config belonging to a schema that is NOT called default.
       default:
         name: New Page
         path: '.cloudcannon/schemas/page.md'
@@ -33,7 +43,7 @@ collections_config:
             type: text
             options:
               required: true
-              required_message: This is a test of input validation in input config belonging to a schema.
+              required_message: This is a test of input validation in input config belonging to a schema that is called default.
       paginated:
         name: Paginated collection
         path: '.cloudcannon/schemas/paginated.md'
