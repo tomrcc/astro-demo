@@ -178,6 +178,7 @@ collection_groups:
     collections:
       - pages
       - blog
+      - jobs
   - heading: Data
     collections:
       - data
