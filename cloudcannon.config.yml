@@ -11,7 +11,50 @@ commit_templates:
     template_string: '{message}'
 
 collections_config:
-
+  jobs:
+    path: src/content/jobs 
+    name: Jobs
+    icon: notes
+    output: true
+    disable_add: false
+    disable_add_folder: true
+    disable_file_actions: false
+    _enabled_editors:
+      - data     
+    schemas:
+      jobs:
+        path: .cloudcannon/schemas/jobs.md
+        name: OG Schema (jobs)
+        create:
+          path: '[relative_base_path]/{posted_date|year|slugify}-{posted_date|month|slugify}-{posted_date|day|slugify}-{job_title|truncate=50|slugify}.[ext]'         
+        reorder_inputs: false
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        icon: notes    
+        _inputs:
+          job_title:
+            label: Title of job
+            options:
+              required: true   
+              cascade: true 
+          court_unit:
+            options:
+              required: true   
+          position_location:
+            options:
+              required: true  
+          posted_date:
+            options:
+              required: true             
+          pdf_link:
+            type: file
+            options:
+              paths:
+                dam_uploads: datastore/uploads/employment/{posted_date|year|slugify}/{posted_date|month|slugify}
+            label: Job PDF file location
+            comment: Select job PDF
+            required: true
   pages:
     path: src/content/pages
     glob:
