@@ -25,7 +25,7 @@ collections_config:
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
         _inputs:
-          seo.page_description:
+          title:
             type: text
             options:
               required: true
@@ -35,7 +35,7 @@ collections_config:
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
         _inputs:
-          seo.page_description:
+          title:
             type: text
             options:
               required: true
@@ -44,9 +44,9 @@ collections_config:
         name: Paginated collection
         path: '.cloudcannon/schemas/paginated.md'
         remove_extra_inputs: false
-    create:
-      path: '[relative_base_path]/{filename|slugify|lowercase}.md'
-    new_preview_url: /
+    # create:
+    #   path: '[relative_base_path]/{filename|slugify|lowercase}.md'
+    # new_preview_url: /
     _inputs:
       title:
         type: text
