@@ -1,5 +1,6 @@
 ---
 title:
+blog_articles:
 seo:
   page_description:
   canonical_url:

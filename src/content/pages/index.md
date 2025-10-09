@@ -1,6 +1,12 @@
 ---
 _schema: default
+_inputs:
+  blog_articles:
+    type: select
+    options:
+      values: collections.blog
 title: CloudCannon Astro Starter
+blog_articles:
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Astro, using
