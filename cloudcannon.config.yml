@@ -24,6 +24,12 @@ collections_config:
         name: Buggy one.
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
+      test:
+        name: Test
+        path: '.cloudcannon/schemas/page.md'
+        remove_extra_inputs: false
+        create:
+          path: '[relative_base_path]/{filename|slugify|lowercase}/index.md''
       paginated:
         name: Paginated collection
         path: '.cloudcannon/schemas/paginated.md'
