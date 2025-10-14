@@ -47,6 +47,12 @@ collections_config:
       title:
         type: text
         comment: Controls the metadata title for the page.
+      seo.featured_image:
+        type: image
+        comment: This is a test input config.
+        options:
+          paths:
+            uploads: '[base_path]'
   blog:
     path: src/content/blog
     glob:
