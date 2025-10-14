@@ -52,7 +52,7 @@ collections_config:
         comment: This is a test input config.
         options:
           paths:
-            uploads: '[path]'
+            uploads: '[path]/test/'
   blog:
     path: src/content/blog
     glob:
